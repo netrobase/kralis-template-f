@@ -1,14 +1,13 @@
 "use client";
 
 import React from "react";
-import Banner1 from "@/assets/banner2.png";
 import { motion } from "framer-motion";
 import { SlideUp } from "@/animation/animate";
 
 const Banner2 = () => {
   return (
     <div>
-      <div className="container py-14">
+      <div className="m-3 container py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* text section */}
           <div className="space-y-5 flex justify-center flex-col xl:max-w-[500px]">
@@ -66,7 +65,7 @@ const Banner2 = () => {
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              src={Banner1}
+              src="images/banner2.png"
               alt=""
               className="w-[95%] md:w-full mx-auto"
             />

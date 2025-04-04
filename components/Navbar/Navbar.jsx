@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Logo from "@/assets/Logo.png";
 import { motion } from "framer-motion";
 
 const NavLinks = [
@@ -36,8 +35,8 @@ const Navbar = () => {
         className="container py-6 flex justify-between items-center"
       >
         {/* Logo section */}
-        <div className="flex items-center gap-3">
-          <img src={Logo} alt="logo" className="w-10" />
+        <div className="m-3 flex items-center gap-3">
+          <img src="images/Logo.png" alt="logo" className="w-10" />
           <span className="text-2xl font-bold">Interior</span>
         </div>
         {/* Link section */}

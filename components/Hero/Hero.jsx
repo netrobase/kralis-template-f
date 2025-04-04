@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import HeroPng from "@/assets/hero.png";
+// import HeroPng from "@/assets/hero.png";
 import { motion } from "framer-motion";
 import { SlideUp } from "@/animation/animate";
 
@@ -54,7 +54,8 @@ const Hero = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              src={HeroPng}
+              // src={HeroPng}
+              src="images/hero.png"
               alt=""
               className="w-[80%] md:w-[700px] object-cover "
             />
