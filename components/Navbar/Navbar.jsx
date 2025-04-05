@@ -2,21 +2,22 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from 'next/link'
 
 const NavLinks = [
   {
     id: 1,
+    title: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
     title: "About",
     link: "#",
   },
   {
-    id: 2,
-    title: "Services",
-    link: "#",
-  },
-  {
     id: 3,
-    title: "Project",
+    title: "Services",
     link: "#",
   },
   {
@@ -37,7 +38,7 @@ const Navbar = () => {
         {/* Logo section */}
         <div className="m-3 flex items-center gap-3">
           <img src="images/Logo.png" alt="logo" className="w-10" />
-          <span className="text-2xl font-bold">Interior</span>
+          <span className="text-2xl font-bold">Future Prep</span>
         </div>
         {/* Link section */}
         <div className="hidden md:block !space-x-12">
@@ -55,7 +56,9 @@ const Navbar = () => {
         </div>
         {/* Button section */}
         <div>
-          <button className="primary-btn">Try For Free</button>
+          <Link href="https://www.kralis.app/" target="_blank">
+            <button className="primary-btn">School Portal</button>
+          </Link>
         </div>
       </motion.div>
     </>

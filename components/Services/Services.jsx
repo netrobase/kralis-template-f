@@ -3,36 +3,40 @@
 import React from "react";
 import { FaVectorSquare } from "react-icons/fa";
 import { FaPenToSquare } from "react-icons/fa6";
-import { BiSolidDollarCircle } from "react-icons/bi";
+import { MdLaptopMac } from "react-icons/md";
 import { motion } from "framer-motion";
 import { SlideUp } from "@/animation/animate";
+import Link from "next/link";
 
 const ServiceCard = [
   {
     id: 1,
-    title: "Luxury Facilities",
+    title: "Result Management",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur",
+      "Efficiently manage and track student performance data with our advanced result management system.",
     icon: <FaVectorSquare />,
-    link: "#",
+    textlink: "srms.kralis.app",
+    link: "https://srms.kralis.app/",
     delay: 0.2,
   },
   {
     id: 2,
-    title: "Quality Products",
+    title: "Administrative Tools",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur",
+      "Manage staff and student information, attendance, and other administrative tasks with ease.",
     icon: <FaPenToSquare />,
-    link: "#",
+    textlink: "kralis.app",
+    link: "https://kralis.app/",
     delay: 0.4,
   },
   {
     id: 3,
-    title: "Affordable Price",
+    title: "Computer-Based Testing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-    icon: <BiSolidDollarCircle />,
-    link: "#",
+      "Conduct secure and efficient online assessments and examinations",
+    icon: <MdLaptopMac />,
+    textlink: "cbt.kralis.app",
+    link: "https://cbt.kralis.app/",
     delay: 0.6,
   },
 ];
@@ -56,12 +60,11 @@ const Services = () => {
             whileInView={"animate"}
             className="text-gray-500 text-sm"
           >
-            Bring your dream home to life with one-on-one design help & hand
-            picked products
+            Awesome features that make Kralis the ultimate smart school solution
           </motion.p>
         </div>
         {/* card section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="m-3 grid grid-cols-1 md:grid-cols-3 gap-5">
           {ServiceCard.map((card) => {
             return (
               <motion.div
@@ -75,13 +78,14 @@ const Services = () => {
                   {card.icon}
                 </span>
                 <p className="text-2xl font-bold font-serif">{card.title}</p>
-                <p className="text-gray-400 text-xs">{card.description}</p>
-                <a
+                <p className="text-gray-400 text-sm">{card.description}</p>
+                <Link
                   href={card.link}
+                  target="_blank"
                   className="inline-block border-b border-black"
                 >
-                  Learn More
-                </a>
+                  <p>{card.textlink}</p>
+                </Link>
               </motion.div>
             );
           })}

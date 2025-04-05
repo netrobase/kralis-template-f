@@ -4,6 +4,7 @@ import React from "react";
 // import HeroPng from "@/assets/hero.png";
 import { motion } from "framer-motion";
 import { SlideUp } from "@/animation/animate";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,9 +17,9 @@ const Hero = () => {
               variants={SlideUp(0.2)}
               initial="initial"
               animate="animate"
-              className="text-4xl font-bold font-serif"
+              className="text-4xl font-bold font-serif uppercase"
             >
-              SKETCH LUXURY INTERIOR DESIGN
+              Welcome to Future Prep
             </motion.h1>
             <motion.p
               variants={SlideUp(0.5)}
@@ -26,26 +27,29 @@ const Hero = () => {
               animate="animate"
               className="text-sm md:text-base text-gray-500 leading-7"
             >
-              Bring your dream to life with one-on-one design help & hand picked
-              products tailored to your style, space and budget.
+              Building a brighter future through knowledge, character, and real-world skills—preparing you to lead, innovate, and succeed in an ever-evolving world.
             </motion.p>
             <div className="space-x-4">
-              <motion.button
-                variants={SlideUp(0.8)}
-                initial="initial"
-                animate="animate"
-                className="primary-btn uppercase bg-black text-white shadow-[5px_5px_0px_0px_#6c6c6c]"
-              >
-                Get started
-              </motion.button>
-              <motion.button
-                variants={SlideUp(1.1)}
-                initial="initial"
-                animate="animate"
-                className="primary-btn uppercase"
-              >
-                Contact Us
-              </motion.button>
+              <Link href="https://www.kralis.app/" target="_blank">
+                <motion.button
+                  variants={SlideUp(0.8)}
+                  initial="initial"
+                  animate="animate"
+                  className="primary-btn uppercase bg-black text-white shadow-[5px_5px_0px_0px_#6c6c6c]"
+                >
+                  Result Portal
+                </motion.button>
+              </Link>
+              <Link href="https://wa.me/2349028366697" target="_blank">
+                <motion.button
+                  variants={SlideUp(1.1)}
+                  initial="initial"
+                  animate="animate"
+                  className="primary-btn uppercase"
+                >
+                  Contact Us
+                </motion.button>
+              </Link>
             </div>
           </div>
           {/* Images section */}
@@ -55,7 +59,7 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               // src={HeroPng}
-              src="images/hero.png"
+              src="images/b-sch.png"
               alt=""
               className="w-[80%] md:w-[700px] object-cover "
             />
