@@ -21,8 +21,7 @@ const Newsletter = () => {
         whileInView="animate"
         className="max-w-[300px] mx-auto text-gray-500 text-sm text-center"
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed libero
-        doloremque ab eum!
+        Stay updated with the latest insights, features, and innovations from Kralis.
       </motion.p>
       {/* form here */}
       <motion.div

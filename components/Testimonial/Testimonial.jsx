@@ -7,26 +7,26 @@ import { SlideLeft, SlideUp } from "@/animation/animate";
 const TestimonialData = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Designer",
-    img: "https://i.pravatar.cc/300?img=1",
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Mrs. Chikelu",
+    designation: "Parent",
+    img: "https://www.netrobase.com/_next/image?url=%2Fimages%2Fprecious.png&w=256&q=75",
+    text: "Kralis has made it incredibly easy to keep track of my child's academic progress. The detailed insights are invaluable.",
     delay: 0.2,
   },
   {
     id: 2,
-    name: "Alex",
-    designation: "Developer",
-    img: "https://i.pravatar.cc/300?img=2",
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Mr. Eze Emmanuel",
+    designation: "Teacher",
+    img: "https://www.netrobase.com/_next/image?url=%2Fimages%2Fleo.png&w=256&q=75",
+    text: "As a teacher, Kralis has revolutionized the way I manage student results. It's intuitive and saves me so much time.",
     delay: 0.4,
   },
   {
     id: 3,
-    name: "George",
-    designation: "Manager",
-    img: "https://i.pravatar.cc/300?img=3",
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Rev Fr Alphonsus Chime",
+    designation: "Dean",
+    img: "https://www.netrobase.com/_next/image?url=%2Fimages%2Ffortune.png&w=256&q=75",
+    text: "Kralis has transformed our academic data management. It's secure, reliable, and offers valuable insights for decision-making.",
     delay: 0.6,
   },
 ];
@@ -47,10 +47,9 @@ const Testimonial = () => {
           variants={SlideUp(0.4)}
           initial="initial"
           whileInView="animate"
-          className="text-gray-500 text-sm max-w-[350px] mx-auto"
+          className="text-gray-500 text-lg max-w-[350px] mx-auto"
         >
-          Bring your dream home to life with one-on-one design help & hand
-          picked products
+          Real experiences, real impact—see how Kralis is transforming education.
         </motion.p>
       </div>
       {/* tesitomonial cards */}
